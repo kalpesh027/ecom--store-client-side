@@ -25,9 +25,7 @@ const Home = () => {
 
   if (isError) toast.error("Cannot Fetch the Products");
 
-  const handleClick = () => {
-    window.location.href = '/search'; 
-  };
+  
 
   return (
     <div className="home">
@@ -42,7 +40,7 @@ const Home = () => {
           <Link to="/search" className="button">BUY NOW</Link> {/* Use Link component */}
         </div>
     </div>
-    <div className="grid-container" onClick={handleClick} style={{ cursor: 'pointer' }}>
+    <div className="grid-container">
        <div className="grid-item">
          <h4>BEST SALE</h4>
          <h5>Laptop Max</h5>
